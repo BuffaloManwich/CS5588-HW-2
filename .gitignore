@@ -1,0 +1,36 @@
+# --- Python cache/venv ---
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.env
+
+# --- Local configs & OS cruft ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Repro/outputs/artifacts (keep repo lean) ---
+runs/
+logs/
+intermediate_files/
+
+# --- BIG DATA: leave out of GitHub ---
+datasets/
+checkpoints/
+
+# --- Small synthetic test assets (generated locally anyway) ---
+datasets/test/min_images/
+datasets/test/*.jsonl
+
+# --- Vendored deps (keep code, ignore heavy assets) ---
+external/**/.git/
+external/**/__pycache__/
+external/**/checkpoints/
+external/**/weights/
+external/**/models/
+external/**/data/
+external/**/datasets/
+external/**/outputs/
+external/**/runs/
+external/**/logs/
