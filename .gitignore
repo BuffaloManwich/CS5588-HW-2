@@ -34,3 +34,6 @@ external/**/datasets/
 external/**/outputs/
 external/**/runs/
 external/**/logs/
+*.bak
+external/LLaVA/images/
+data/
